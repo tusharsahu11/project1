@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding:20px;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    color:var(--primary-text-color);
+}
+h1{
+   font-size:2rem;
+}
+h2{
+    font-size:2rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size:1.25rem;
+    color:var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display:inline-block;
+}
+ul{
+    list-style: none;
+    /*to remove the dots*/
+}
+/*utility classes*/
+.small-bold-text{
+    font-size: 1rem;
+    font-weight:700;
+}
+
+.container{
+    margin: auto;
+    padding: var(--padding);
+    max-width: 1180px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+.hover-link{
+    color:var(--primary-text-color);
+
+}
+.hover-link:hover{
+    color: aqua;
+}
+/*for sign up button*/
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color:white ;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--accent-color-dark);
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+
+/*for sign in button*/
+.secondary-button{
+    border:0.5px solid var(--secondary-text-color);
+    border-radius:6px ;
+    color:var(--primary-text-color);
+    padding: 12px 24px;
+    transition:0.2s ease-out
+
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color:var(--accent-color);
+}
+
+
+/*top banner*/
+.top-banner{
+    background-color: #4fb3d4;
+     background-image: url(../images/asset\ 32.png);
+    background-size: 300px;
+
+}
+
+.banner-text{
+    color:white;
+    padding:15px 30px;
+    text-align: center;
+}
+
+.main-nav{
+   margin-top:20px;
+   justify-content: space-between;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap:40px;/*to give gap between the customers ,pricing and .........*/
+}
+
+/*header section*/
+
+.header-section{
+    justify-content: center;
+    gap:50px;
+}
+.header-left h1{
+     margin: top 20px; ;
+}
+.header-right img{
+    width: 600px;
+}
+.get-started-button{
+    margin-top: 20px;
+}
+
+/*Companies section*/
+
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+    /*we can use the margin top and bottom 30 px but if we use margin block it will do the both*/
+}
+.logos{
+   justify-content:space-between;
+}
+.logo{
+height: 46px;
+}
+
+/*features section*/
+  
+.features-section{
+    padding:80px var(--padding)  0;
+    background-image:url(../images/asset\ 34.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+.features-header{
+     text-align: center;
+     margin-bottom: 50px;
+ }
+
+.features-heading-text{
+    margin-bottom: 20px;
+}
+.features-area{
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:40px;
+}
+.features-card{
+    flex-direction: column;
+    gap:20px;
+    max-width:30%;
+    text-align: center;
+    
+}
+.features-card img{
+    width:60px;
+}
+/*big features section*/
+
+
+.big-features-section{
+    padding: 30px var(--padding) 0;
+}
+
+.big-features-containner{
+    gap:30px;
+    margin-top: 50px;
+    margin-bottom: 50px;;
+}
+.feature-img img{
+    width: 100%;
+}
+.features-description{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:30px;
+}
+
+/*Example section*/
+.examples-header{
+    flex-direction: column;
+    text-align: center;
+    gap:20px;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+.examples-card{
+    width:23%;
+    position: relative;
+    min-height: 300px;
+    background-color: black;
+    background-image: url(../images/asset\ 36.jpeg);
+    transition:  0.2s ease-out;
+}
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+.card-text{
+    position:absolute;
+    bottom:20px;
+    left:20px;  
+    right:20px;
+    color:whitesmoke;
+}
+
+.cta-section-container{
+    flex-direction: column;
+    gap:30px;
+    color:white;
+   
+}
+
+.cta-section{
+    padding: 120px var(--padding) 80px;
+    background-color: #183b54;
+}
+
+.cta-section-container p{
+  color:white;
+  margin-top: 20px;
+}
+/*footer section*/
+footer{
+    padding-block: 80px;
+    background-color:#ebf2fa;
+}
+.link-column{
+    align-items: flex-start;
+    flex-direction: column;
+    gap:20px;
+}
+.footer-container{
+  align-items: flex-start;
+  justify-content:space-between ;
+}
+
+/*sub footer*/
+
+.sub-footer{
+    background-color:#b9cde4 ;
+    padding: var(--padding);
+}
+.subfooter-container{
+    justify-content: center;
+    gap:40px;
+}
+/* .bottom-container{
+    width: 100%;
+    margin-left: -200px;
+} */
